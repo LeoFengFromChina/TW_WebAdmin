@@ -1,0 +1,68 @@
+﻿[
+  {
+    "id": 1,
+    "typeid": 1,
+    "pagetype": "div",
+    "title": "变频电梯001",
+    "mainstyle": "background-image: url('images/chrome.png');",
+    "titlestyle": "display:block",
+    "url": "product-type",
+    "img": "images/products/ptdt.jpg",
+    "memo": "普通施工升降机"
+  },
+  {
+    "id": 2,
+    "typeid": 1,
+    "pagetype": "div",
+    "title": "变频电梯002",
+    "mainstyle": "background-image: url('images/firefox.png');",
+    "titlestyle": "display:block",
+    "url": "product-type",
+    "img": "images/products/bpdt.jpg",
+    "memo": "普通施工升降机"
+  },
+  {
+    "id": 3,
+    "typeid": 2,
+    "pagetype": "div",
+    "title": "普通电梯001",
+    "mainstyle": "background-image: url('images/safari.png');",
+    "titlestyle": "display:block",
+    "url": "product-type",
+    "img": "images/products/ptdt.jpg",
+    "memo": "普通施工升降机"
+  },
+  {
+    "id": 4,
+    "typeid": 2,
+    "pagetype": "div",
+    "title": "普通电梯002",
+    "mainstyle": "background-image: url('images/ie.png');",
+    "titlestyle": "display:block;",
+    "url": "product-type",
+    "img": "images/products/ptdt.jpg",
+    "memo": "普通施工升降机"
+  },
+  {
+    "id": 5,
+    "typeid": 3,
+    "pagetype": "div",
+    "title": "新型普通电梯002",
+    "mainstyle": "background-image: url('images/ie.png');",
+    "titlestyle": "display:block;",
+    "url": "product-type",
+    "img": "images/products/xxptdt.jpg",
+    "memo": "普通施工升降机"
+  },
+  {
+    "id": 6,
+    "typeid": 3,
+    "pagetype": "div",
+    "title": "新型普通电梯002",
+    "mainstyle": "background-image: url('images/ie.png');",
+    "titlestyle": "display:block;",
+    "url": "product-type",
+    "img": "images/products/xxptdt.jpg",
+    "memo": "普通施工升降机"
+  }
+]

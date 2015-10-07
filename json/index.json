@@ -1,0 +1,60 @@
+﻿[
+      {
+          "id": 1,
+          "pagetype": "html",
+          "title": "产品展示",
+          "icon":"icon-product",
+          "mainstyle":"background-color: #FF563A; height: 230px;",			  
+          "titlestyle": "font-size:24px;",
+          "url": "product-type",
+          "memo": "普通施工升降机"
+      },{
+          "id": 2,
+          "pagetype": "html",
+          "title": "产品配件",
+          "icon":"icon-accessories",
+          "direction":"horizontal",   
+          "mainstyle":"background-color: #92D050; height: 120px;line-height:120px;",			  
+          "titlestyle": "font-size:24px;",
+          "url": "component-list",
+          "memo": "普通施工升降机"
+      },{
+          "id": 3,
+          "pagetype": "html",
+          "title": "工程案例",
+          "icon":"icon-project",
+          "mainstyle":"background-color: #00B0F0; height: 230px;",			  
+          "titlestyle": "font-size:24px;",
+          "url": "solution",
+          "memo": "普通施工升降机"
+      },{
+          "id": 4,
+          "pagetype": "html",
+          "title": "关于特威",
+          "icon":"icon-tw",
+          "direction":"",
+          "mainstyle":"background-color: #FFC000; height: 200px;",			  
+          "titlestyle": "font-size:24px;;",
+          "url": "about",
+          "memo": "普通施工升降机"
+      },{
+          "id": 5,
+          "pagetype": "div",
+          "title": "视频",
+          "icon":"icon-video",
+          "direction":"horizontal",
+          "mainstyle":"background-color: #FA3636; height: 60px;line-height:60px;",			  
+          "titlestyle": "font-size:24px;",
+          "url": "video",
+          "memo": "普通施工升降机"
+      },{
+          "id": 6,
+          "pagetype": "html",
+          "title": "特威服务",
+          "icon":"icon-xin",
+          "mainstyle":"background-color: #FF218B; height: 200px;",			  
+          "titlestyle": "font-size:24px;",
+          "url": "service",
+          "memo": "普通施工升降机"
+      }
+    ]

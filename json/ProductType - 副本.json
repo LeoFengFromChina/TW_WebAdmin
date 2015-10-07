@@ -1,0 +1,42 @@
+﻿[
+  {
+    "id": 1,
+    "pagetype": "html",
+    "title": "变频电梯",
+    "mainstyle": "background-image: url('images/chrome.png');",
+    "titlestyle": "display:block",
+    "url": "product-type",
+    "img": "images/products/xxptdt.jpg",
+    "memo": "普通施工升降机"
+  },
+  {
+    "id": 2,
+    "pagetype": "html",
+    "title": "普通电梯",
+    "mainstyle": "background-image: url('images/firefox.png');",
+    "titlestyle": "display:block",
+    "url": "product-type",
+    "img": "images/products/xxptdt.jpg",
+    "memo": "普通施工升降机"
+  },
+  {
+    "id": 3,
+    "pagetype": "html",
+    "title": "新型普通电梯",
+    "mainstyle": "background-image: url('images/safari.png');",
+    "titlestyle": "display:block",
+    "url": "product-type",
+    "img": "images/products/xxptdt.jpg",
+    "memo": "普通施工升降机"
+  },
+  {
+    "id": 4,
+    "pagetype": "html",
+    "title": "其他电梯",
+    "mainstyle": "background-image: url('images/ie.png');",
+    "titlestyle": "display:block;",
+    "url": "product-type",
+    "img": "images/products/xxptdt.jpg",
+    "memo": "普通施工升降机"
+  }
+]
