@@ -74,6 +74,7 @@
                         企业管理</a>
                     <ul>
                         <li><a href="javascript:void(0);" onclick="aClickFunc(this)" page="about.aspx">关于特威</a></li>
+                        <li><a href="javascript:void(0);" onclick="aClickFunc(this)" page="users.aspx">用户管理</a></li>
                         <li><a href="javascript:void(0);" onclick="aClickFunc(this)" page="service.html">特威服务</a></li>
                     </ul>
                 </li>

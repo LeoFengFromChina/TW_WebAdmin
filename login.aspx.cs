@@ -21,7 +21,7 @@ public partial class login : BaseForm
         List<User> pls = GetJsonToObject<List<User>>(jpath);
         foreach (User item in pls)
         {
-            if (item.username.Equals(userName) )//&& item.psw.Equals(psw)
+            if (item.username.Equals(userName) && item.psw.Equals(psw))//&& item.psw.Equals(psw)
             {
                 Session["islogin"] = "1";
                 Session.Timeout = 15;
