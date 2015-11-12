@@ -15,7 +15,7 @@ public partial class productlist : BaseForm
         if (!Page.IsPostBack)
         {
             //给是删除按钮注册js事件
-            deleteBtn.Attributes.Add("OnClick", "return  del_sure()");
+            // deleteBtn.Attributes.Add("OnClick", "return  del_sure()");
 
             //初始化绑定数据
             string jpath = @"\json\ProductList.json";
@@ -31,9 +31,10 @@ public partial class productlist : BaseForm
         //获取选中IDS
         string ids = GetSelectedAsString(myRepeat);
         if (ids == "-999")
-        {
-            Alert("没有选择任何记录！");
-            return;
+        {   
+            ClientScript.RegisterStartupScript(ClientScript.GetType(), "myscript", "<script>myTip('没有选择任何记录！');</script>");
+            //Alert("没有选择任何记录！");
+            return ;
         }
         //删除指定
         string jpath = @"\json\ProductList.json";
@@ -65,6 +66,7 @@ public partial class productlist : BaseForm
         //保存修改
         string s2 = JsonSerializer<List<ProductList>>(pls);
         Write(CurrentPath + "\\" + jpath, @s2);
-        Alert("删除成功！");
+        ClientScript.RegisterStartupScript(ClientScript.GetType(), "myscript", "<script>myTip('删除成功！');</script>");
+       // Alert("删除成功！");
     }
 }

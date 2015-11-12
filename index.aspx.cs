@@ -14,7 +14,7 @@ public partial class index : BaseForm
             base.ValidateLogin();
             lbl_userName.Text = Session["userName"].ToString();
             //给是删除按钮注册js事件
-            btn_Logout.Attributes.Add("OnClick", "return  del_sure()");
+            //btn_Logout.Attributes.Add("OnClick", "return  del_sure()");
         }
     }
 
@@ -23,4 +23,5 @@ public partial class index : BaseForm
         Session.RemoveAll();
         Response.Redirect("login.aspx");
     }
+
 }

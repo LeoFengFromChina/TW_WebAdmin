@@ -104,7 +104,8 @@ public partial class AddComponent : BaseForm
         product.content = txt_content.Text;
         string s2 = JsonSerializer<List<Product>>(new List<Product>() { product });
         Write(CurrentPath + "\\" + jpath2, s2);
-        Alert("添加成功！");
+        ClientScript.RegisterStartupScript(ClientScript.GetType(), "myscript", "<script>successCallback('添加成功！');</script>"); 
+       // Alert("添加成功！");
     }
 
     private void EditFunc(string id)
@@ -135,6 +136,7 @@ public partial class AddComponent : BaseForm
         p[0].content = txt_content.Text;
         string s2 = JsonSerializer<List<Product>>(p);
         Write(CurrentPath + "\\" + jpath2, s2);
-        Alert("保存成功！");
+         ClientScript.RegisterStartupScript(ClientScript.GetType(), "myscript", "<script>successCallback('保存成功！');</script>"); 
+        //Alert("保存成功！");
     }
 }

@@ -32,7 +32,7 @@ public partial class login : BaseForm
                 return;
             }
         }
-
-        Alert("login Failed.");
+         ClientScript.RegisterStartupScript(ClientScript.GetType(), "myscript", "<script>loginTip('账号或者密码错误');</script>"); 
+       // Alert("login Failed.");
     }
 }

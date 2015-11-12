@@ -57,7 +57,8 @@ public partial class AddUser : BaseForm
         if (string.IsNullOrEmpty(txt_name.Text)
             || string.IsNullOrEmpty(txt_psw.Text))
         {
-            Alert("账号或密码不能为空！");
+            ClientScript.RegisterStartupScript(ClientScript.GetType(), "myscript", "<script>tip('账号或密码不能为空！');</script>"); 
+           // Alert("账号或密码不能为空！");
             return;
         }
         if (string.IsNullOrEmpty(ctrID))
@@ -86,8 +87,8 @@ public partial class AddUser : BaseForm
         //保存修改
         string s1 = JsonSerializer<List<User>>(pll);
         Write(CurrentPath + "\\" + jpath, s1);
-
-        Alert("添加成功！");
+        ClientScript.RegisterStartupScript(ClientScript.GetType(), "myscript", "<script>successCallback('添加成功！');</script>"); 
+        //Alert("添加成功！");
     }
 
     private void EditFunc(string id)
@@ -109,7 +110,7 @@ public partial class AddUser : BaseForm
         //保存修改
         string s1 = JsonSerializer<List<User>>(pll);
         Write(CurrentPath + "\\" + jpath, s1);
-
-        Alert("保存成功！");
+        ClientScript.RegisterStartupScript(ClientScript.GetType(), "myscript", "<script>successCallback('保存成功！');</script>");
+       // Alert("保存成功！");
     }
 }

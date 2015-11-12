@@ -7,6 +7,15 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
     <link rel="stylesheet" href="css/login.css">
+   <link rel="stylesheet" href="plugin/jbox/skins2/Blue/jbox.css" />
+    <script type="text/javascript" src="plugin/jbox/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="plugin/jbox/jquery.jbox-2.3.min.js"></script>
+    <script type="text/javascript" src="plugin/jbox/i18n/jquery.jbox-zh-CN.js"></script>
+    <script>
+        function loginTip(msg){
+          $.jbox.tip(msg);
+        }
+    </script>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -33,7 +42,7 @@
             </div>
 
             <div class="login-help">
-                <p><a href="#">Power by 广州市汇客信息科技有限公司</a>.</p>
+                <!--<p><a href="#">Power by 广州市汇客信息科技有限公司</a>.</p>-->
             </div>
         </section>
     </form>

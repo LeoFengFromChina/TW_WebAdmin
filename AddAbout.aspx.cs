@@ -65,7 +65,8 @@ public partial class AddAbout : BaseForm
         if (string.IsNullOrEmpty(txt_title.Text)
     || string.IsNullOrEmpty(txt_content.Text))
         {
-            Alert("标题或内容不能为空！");
+            ClientScript.RegisterStartupScript(ClientScript.GetType(), "myscript", "<script>myTip('标题或内容不能为空！');</script>"); 
+            //Alert("标题或内容不能为空！");
             return;
         }
         if (string.IsNullOrEmpty(ctrID))
@@ -104,7 +105,8 @@ public partial class AddAbout : BaseForm
         product.content = txt_content.Text;
         string s2 = JsonSerializer<List<Product>>(new List<Product>() { product });
         Write(CurrentPath + "\\" + jpath2, s2);
-        Alert("添加成功！");
+        ClientScript.RegisterStartupScript(ClientScript.GetType(), "myscript", "<script>successCallback('添加成功！');</script>"); 
+       // Alert("添加成功！");
     }
 
     private void EditFunc(string id)
@@ -135,6 +137,7 @@ public partial class AddAbout : BaseForm
         p[0].content = txt_content.Text;
         string s2 = JsonSerializer<List<Product>>(p);
         Write(CurrentPath + "\\" + jpath2, s2);
-        Alert("保存成功！");
+        ClientScript.RegisterStartupScript(ClientScript.GetType(), "myscript", "<script>successCallback('保存成功！');</script>"); 
+       // Alert("保存成功！");
     }
 }

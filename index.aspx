@@ -7,7 +7,13 @@
     <title>广州市特威后台</title>
     <link rel="shortcut icon" href="images/logo/favicon.ico" type="image/x-icon">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <script type="text/javascript" src="js/libs/jquery/1.6/jquery.min.js"></script>
+
+        <link rel="stylesheet" href="plugin/jbox/skins2/Blue/jbox.css" />
+    <script type="text/javascript" src="plugin/jbox/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="plugin/jbox/jquery.jbox-2.3.min.js"></script>
+    <script type="text/javascript" src="plugin/jbox/i18n/jquery.jbox-zh-CN.js"></script>
+
+
     <script type="text/javascript" src="js/libs/jqueryui/1.8.13/jquery-ui.min.js"></script>
     <link rel="stylesheet" href="css/min.css" />
     <script type="text/javascript" src="js/min.js"></script>
@@ -21,6 +27,17 @@
                 return false;
             }
         }
+        function del_sure2(){
+            var submit = function (v, h, f) {
+            if (v == 'ok'){
+               document.getElementById("btn_Logout").click();
+            }
+               return true; //close
+            };
+
+            $.jbox.confirm("确定退出吗？", "提示", submit);
+
+        }
     </script>
 </head>
 <body runat="server">
@@ -28,7 +45,7 @@
 
         <!--头部-->
         <div id="head">
-            <div class="left">
+            <div class="right">
                 <a href="#" class="button profile">
                     <img src="img/icons/top/huser.png" alt="" /></a>
                 Hi,
@@ -36,15 +53,17 @@
                 <asp:Label ID="lbl_userName" runat="server" Text="Admin"></asp:Label></a>
                 |
             <a href="#">
-                <asp:LinkButton ID="btn_Logout" runat="server" Text="Logout" OnClick="btn_Logout_Click" /></a>
+                <asp:LinkButton ID="btn_Logout" runat="server" Text="退出" OnClick="btn_Logout_Click"  style="display:none;"/></a>
+            
+            <a href="javascript:;" onclick="del_sure2();">退出</a>
             </div>
-            <div class="right">
+            <!--<div class="right">
                 <form action="#" id="search" class="search placeholder">
                     <label>Looking for something ?</label>
                     <input type="text" value="" name="q" class="text" />
                     <input type="submit" value="rechercher" class="submit" />
                 </form>
-            </div>
+            </div> -->
         </div>
 
         <!--左侧菜单-->
